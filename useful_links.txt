@@ -1,0 +1,11 @@
+project tutorial:
+https://www.youtube.com/watch?v=DGwdAQauEV4
+
+tester:
+https://github.com/FranFrau/Supreme-Tester-Libft
+
+program:
+https://github.com/42school/norminette
+
+learning CS in general:
+https://github.com/ossu/computer-science
