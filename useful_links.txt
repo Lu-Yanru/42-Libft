@@ -1,10 +1,13 @@
 project tutorial:
+memmove()
 https://www.youtube.com/watch?v=DGwdAQauEV4
+void pointer:
+https://www.youtube.com/watch?v=t7CUti_7d7c
 
 tester:
 https://github.com/FranFrau/Supreme-Tester-Libft
 
-program:
+others:
 https://github.com/42school/norminette
 
 learning CS in general:
