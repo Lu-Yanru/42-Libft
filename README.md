@@ -57,3 +57,34 @@ Recreates the following functions from Libc:
   - Allocates memory (using malloc(3)) and returns a string representing the integer received as an argument.
   - param: n: The integer to convert.
   - return: The string representing the integer. NULL if the allocation fails.
+
+- char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+  - Applies the function f to each character of the string s, passing its index as the first argument and the character itself as the second. A new string is created (using malloc(3)) to store the results from the successive applications of f.
+  - param1: s: The string to iterate over.
+  - param2: f: The function to apply to each character.
+  - return: The string created from the successive applications of ’f’. Returns NULL if the allocation fails.
+
+- void ft_striteri(char *s, void (*f)(unsigned int, char*));
+  - Applies the function ’f’ to each character of the string passed as argument, passing its index as the first argument. Each character is passed by address to ’f’ so it can be modified if necessary. Compared to ft_strmapi, this function doesn't create a new string but modifies the input string.
+  - param1: s: The string to iterate over.
+  - param2: f: The function to apply to each character.
+
+- void ft_putchar_fd(char c, int fd);
+  - Outputs the character ’c’ to the specified file descriptor.
+  - param1: c: The character to output.
+  - param2: fd: The file descriptor on which to write.
+
+- void ft_putstr_fd(char *s, int fd);
+  - Outputs the string ’s’ to the specified file descriptor.
+  - param1: s: The string to output.
+  - param2: fd: The file descriptor on which to write.
+
+- void ft_putendl_fd(char *s, int fd);
+  - Outputs the string ’s’ to the specified file descriptor followed by a newline.
+  - param1: s: The string to output.
+  - param1: fd: The file descriptor on which to write.
+ 
+- void ft_putnbr_fd(int n, int fd);
+  - Outputs the integer ’n’ to the specified file descriptor.
+  - param1: n: The integer to output.
+  - param2: fd: The file descriptor on which to write.
